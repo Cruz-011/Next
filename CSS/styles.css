@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.search-bar {
+    margin-bottom: 70px;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.chart {
+    width: 45%;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.musica-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.musica-info p {
+    color: white;
+    margin: 10px 0;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    position: relative;
+    width: 500px; 
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.progress {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.progress-ball {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.botoes {
+    margin-top: 20px;
+}
+
+.botoes button {
+    padding: 20px 60px;
+    margin: 0 10px;
+    border: 3px solid red;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 52px;
+}
+
+#adiconar-playlist {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 2px solid green;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
