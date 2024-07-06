@@ -47,14 +47,14 @@ body {
     margin: 10px 0;
 }
 
-.progress-container {
+.progresso-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 0;
 }
 
-.progress-bar {
+.progresso-bar {
     position: relative;
     width: 500px; 
     height: 10px;
@@ -63,7 +63,7 @@ body {
     margin: 0 10px;
 }
 
-.progress {
+.progresso {
     position: absolute;
     height: 100%;
     width: 50%;
@@ -71,7 +71,7 @@ body {
     border-radius: 5px;
 }
 
-.progress-ball {
+.progresso-ball {
     position: absolute;
     top: -5px;
     left: 50%;
