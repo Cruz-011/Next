@@ -9,7 +9,7 @@ body {
 }
 
 .search-bar {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 .search-bar input {
@@ -19,20 +19,39 @@ body {
     border-radius: 100px;
 }
 
+.content {
+    display: flex;
+}
+
 .chart-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 80%;
-    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .chart {
-    width: 45%;
+    width: 600px;
     height: 300px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.chart canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -56,7 +75,7 @@ body {
 
 .progresso-bar {
     position: relative;
-    width: 500px; 
+    width: 500px;
     height: 10px;
     background-color: #ccc;
     border-radius: 5px;
@@ -84,11 +103,14 @@ body {
 
 .botoes {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .botoes button {
     padding: 20px 60px;
-    margin: 0 10px;
+    margin: 10px 0;
     border: 3px solid red;
     background-color: transparent;
     color: white;
@@ -104,4 +126,30 @@ body {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .chart-container {
+        width: 60%;
+    }
+
+    .info-container {
+        width: 35%;
+    }
+
+    .botoes {
+        flex-direction: row;
+    }
+
+    .botoes button {
+        width: auto;
+        margin: 0 10px;
+    }
+
+    #adiconar-playlist {
+        width: auto;
+    }
 }
